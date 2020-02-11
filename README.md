@@ -13,3 +13,8 @@ producer的acks含义
 
 并发过高情况下反复连接kafka会报错：连接超时
 可以使用连接池(generic-pool实现)
+
+
+nodejs的kafka模块并没有直接支持zookeeper模式
+需要使用node-zookeeper-client获取brokers 来实现集群模式
+代码查看 zookeeper.help.js
